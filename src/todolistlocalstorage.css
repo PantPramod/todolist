@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;     
+}
+
+h1{
+    text-align: center;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.input{
+    margin-top: 50px;
+    
+}
+.input input{
+ padding: 7px;    
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width:500px;
+ font-size: 20px;
+    
+}
+
+.submit{
+    background: darkblue;
+    padding: 10px 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    border: none;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 20px;
+}
+
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+
+    overflow: hidden;
+    padding: 20px;
+    color:darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(100, 148, 237, 0.109);
+    margin-top: 4px;
+    
+}
+ul li p{
+    flex-basis: 70%;
+    display: inline-block;
+    max-width: 100vw;
+}
+
+ul li .btn{
+    cursor: pointer;
+    flex-basis: 10%;
+    color:red 
+}
+.btn:hover{
+    color:black
+}
+
+ul li :last-child{
+    color:blue;
+    margin-left: 10px;
+}
+
+@media (max-width:768px) {
+
+   
+    .input input{
+        width: 90vw;
+    }
+    
+}
